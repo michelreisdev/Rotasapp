@@ -1,5 +1,6 @@
 import styled, {createGlobalStyle} from "styled-components";
-import {primaryColor, primaryDarkColor} from "../config/colors"
+import * as calors from "../config/colors"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
    *{
@@ -15,8 +16,8 @@ export default createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        background: ${primaryDarkColor};
-        color: ${primaryColor};
+        background: ${calors.primaryDarkColor};
+        color: ${calors.primaryColor};
     }
 
     html, body, #root{
@@ -25,7 +26,7 @@ export default createGlobalStyle`
 
     button{
         cursor: pointer;
-        background: ${primaryColor};
+        background: ${calors.primaryColor};
         border: none;
         color: #fff;
         padding: 10px 10px;
@@ -35,12 +36,14 @@ export default createGlobalStyle`
 
     a{
         text-decoration: none;
-        color: ${primaryColor};
+        color: ${calors.primaryColor};
     }
 
     ul{
         list-style: none;
     }
+
+
 `;
 
 export const Container = styled.section`
