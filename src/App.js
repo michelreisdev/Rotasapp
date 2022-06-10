@@ -9,7 +9,6 @@ import history from './services/history';
 import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 function App() {
-  
   return (<>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
