@@ -7,7 +7,7 @@ export default function Login(){
     const dispatch = useDispatch();
 
     function handleClick(e){
-        e.preventDefault();
+        e.preventDefault();   
         dispatch(exampleActions.clicaBotaorRequest());
     }
 
