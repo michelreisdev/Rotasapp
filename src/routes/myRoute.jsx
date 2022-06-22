@@ -1,5 +1,5 @@
 import React from "react";
-import Erro404 from '../pages/erro404';
+import Login from "../pages/login";
 import PropTypes from 'prop-types';
 
 
@@ -7,7 +7,7 @@ export default function MyRoute({element: Element, isClosed}){
     const isLoggidIn = false;
 
     if(isClosed !== !isLoggidIn){
-        return <Erro404/>;
+        return <Login/>;
     }
     return <Element/>;
     
